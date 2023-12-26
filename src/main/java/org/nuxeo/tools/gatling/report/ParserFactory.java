@@ -40,7 +40,7 @@ public class ParserFactory {
             if (version.startsWith("3.4")) {
                 return new SimulationParserV34(file, apdexT);
             }
-            if (version.matches("3\\.[5-9].*")) {
+            if (version.matches("3\\.[5-9].*") || version.matches("3\\.10.*")) {
                 return new SimulationParserV35(file, apdexT);
             }
             if (version.startsWith("3.0")) {
